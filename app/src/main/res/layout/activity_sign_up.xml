@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    tools:context=".signUp">
+
+
+    <TextView
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#020202"
+        android:fontFamily="sans-serif-black"
+        android:text="  SignUp"
+        android:textColor="#FAFDFCFC"
+        android:textSize="36sp" />
+
+    <RelativeLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:drawable/alert_dark_frame"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edit_round"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:hint="name"
+                android:inputType="text"
+                android:textSize="20dp"
+                app:met_minCharacters="5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_below="@id/linear1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edit_round"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+                android:hint="Phone number(+92)"
+                android:inputType="phone"
+                android:textSize="20dp"
+                app:met_minCharacters="11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_below="@id/linear2"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edit_round"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textSize="20dp"
+                app:met_minCharacters="9" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_below="@+id/linear3"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_round"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:hint="password"
+                android:inputType="numberPassword"
+                android:textSize="20dp"
+                app:met_minCharacters="5" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/button_round"
+        android:text="signup"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/tv_al_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Already have an account? "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FCF8F8"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/tv_backsignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup"
+        android:layout_marginLeft="-183dp"
+        android:layout_marginTop="48dp"
+        android:layout_toRightOf="@+id/tv_al_account"
+        android:text=" Sign In"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AE7E7878"
+    tools:context=".menu1">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/civic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="211dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="206dp"
+        android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+        android:onClick="fun"
+        android:text="The 10th Generation Honda Civic introduces a new design language as well as a range of cleaner, more powerful and more efficient engines. Honda Civic 2020 is a front engine, front wheel drive, subcompact sedan also known as Civic X. The Honda Civic 2020 is available in 2 variants in Pakistan 1.8 Litre and 1.8-Liter VTI Oriel while globally it is sold in 4 variants LX, EX, EX-T and EX-L."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="Civic 2020"
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="RS: 2,500,000"
+            android:textColor="#000"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#E91010"
+        android:text="BUY"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="550dp"
+        android:text="TextView" />
+
+</RelativeLayout>
